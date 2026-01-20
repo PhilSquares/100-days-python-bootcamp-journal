@@ -90,7 +90,7 @@ git push
 
 | Day  | Date       | Project Name           | Link to Code            |
 |------|------------|------------------------|-------------------------|
-| 0    | YYYY-MM-DD | Setup & Repo Creation  | [Code](projects/day-000) |
+| 1    | 2026-19-01 | 🎸 Band Name Generator  | [Code](projects/day-001/main.py) |
 
 ---
 
