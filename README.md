@@ -91,6 +91,7 @@ git push
 | Day  | Date       | Project Name           | Link to Code            |
 |------|------------|------------------------|-------------------------|
 | 1    | 2026-19-01 | 🎸 Band Name Generator  | [Code](projects/day-001/main.py) |
+| 2.   | 2026-26-01 | 📊 Tip Calculator       | [Code](projects/day-002/main.py) | 
 
 ---
 
