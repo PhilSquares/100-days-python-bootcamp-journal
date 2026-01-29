@@ -94,9 +94,9 @@ git push
 
 | Day  | Date       | Project Name           | Link to Code            |
 |------|------------|------------------------|-------------------------|
-| 1    | 2026-19-01 | 🎸 Band Name Generator | [Code](projects/day-001/main.py) |
-| 2    | 2026-26-01 | 📊 Tip Calculator      | [Code](projects/day-002/main.py) | 
-| 3.   | 2026-28-01 | 🏴‍☠️ Treasure Island     | [Code](projects/day-003/main.py) |
+| 1    | 2026-01-19 | 🎸 Band Name Generator | [Code](projects/day-001/main.py) |
+| 2    | 2026-01-26 | 📊 Tip Calculator      | [Code](projects/day-002/main.py) | 
+| 3.   | 2026-01-28 | 🏝️ Treasure Island     | [Code](projects/day-003/main.py) |
 
 ---
 
