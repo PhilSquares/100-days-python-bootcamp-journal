@@ -27,6 +27,7 @@
 - Comments **(# This is a comment)** are useful for explaining code.
 - Debugging tip: print intermediate values to ensure your program is working as expected.
 
+
 ## Day 2 — Understanding Data Types & String Manipulation
 
 ### Mathematical Operations in Python
@@ -101,3 +102,107 @@ print(f"Your score is {score}, your height is {height}, winning: {is_winning}")
 ```
 
 They are faster, cleaner, and more readable than string concatenation.
+
+
+## Day 3 — Beginner - Control Flow and Logical Operators
+
+### Conditional Statements
+  - Conditional statements allow programs to make decisions.
+
+Basic syntax:
+
+```python
+if condition:
+    do_this
+elif another_condition:
+    do_this_instead
+else:
+    do_this_if_all_else_fails
+```
+
+## Comparison Operators:
+  - Used to compare values:
+
+| Operator | Meaning |
+|---------|--------|
+| `==` | Equal to |
+| `!=` | Not equal |
+| `>` | Greater than |
+| `<` | Less than |
+| `>=` | Greater than or equal |
+| `<=` | Less than or equal |
+
+Example:
+```python
+age = 18
+
+if age >= 18:
+    print("You can vote.")
+else:
+    print("You are underage.")
+```
+
+## Logical Operators
+  - Used to combine conditions.
+
+### Logical Operators
+
+| Operator | Meaning |
+|---------|--------|
+| `and` | Both conditions must be true |
+| `or` | At least one condition must be true |
+| `not` | Reverses a condition |
+
+Example:
+```python
+age = 20
+has_id = True
+
+if age >= 18 and has_id:
+    print("Entry allowed")
+```
+
+## Nested Conditionals
+  - Conditionals inside other conditionals.
+
+Example:
+```python
+choice = input("Left or right? ").lower()
+
+if choice == "left":
+    print("You move forward.")
+    if choice == "left":
+        print("You found treasure!")
+else:
+    print("Game over.")
+```
+Used heavily in decision-based games like `Treasure Island`.
+
+String Methods for Input Handling
+
+`.lower()` converts text to lowercase:
+
+```python
+user_input = input("Type YES or NO: ").lower()
+```
+
+This prevents issues with:
+  - YES vs yes
+  - Yes vs yEs
+
+## Control Flow Design
+Control flow is the order in which code executes.
+
+With conditionals, you can:
+  - Block access to logic
+  - Create branching paths
+  - Build interactive programs
+  - Simulate game states
+
+This is the foundation for:
+  - Game loops
+  - Validation systems
+  - Menu systems
+  - User authentication logic
+
+---
