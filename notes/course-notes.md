@@ -206,3 +206,72 @@ This is the foundation for:
   - User authentication logic
 
 ---
+
+## Day 4 - Beginner - Randomisation and Python Lists
+
+### The Random Module 
+Python provides a built-in `random` module for generating random values.
+
+Common functions:
+
+```python
+import random
+
+random.randint(1, 10)   # Random integer between 1 and 10 (inclusive)
+random.random()        # Random float between 0 and 1
+```
+
+### Python Lists
+Lists store multiple values in a single variable.
+
+Example:
+```python
+fruits = ["apple", "banana", "cherry"]
+```
+Access items using indexing:
+```python
+fruits[0]  # "apple"
+fruits[1]  # "banana"
+```
+
+### List Length
+Use `len()` to get the size of a list:
+```python
+len(fruits)  # 3
+```
+
+### Random Selection from a List
+A common pattern is choosing a random element:
+```python
+import random
+
+choices = ["rock", "paper", "scissors"]
+computer_choice = random.choice(choices)
+```
+
+Or by index:
+```python
+index = random.randint(0, 2)
+computer_choice = choices[index]
+```
+
+### Using Lists with Game Logic
+  - Lists are useful for:
+  - Mapping numeric input to values
+  - Storing game states
+  - Managing collections of options
+
+Example:
+```python
+options = ["rock", "paper", "scissors"]
+user_choice = int(input("Choose 0, 1, or 2: "))
+print(options[user_choice])
+```
+
+### Why This Matters
+Randomness + lists are foundational for:
+  - Games
+  - Simulations
+  - Sampling data
+  - AI behavior
+  - Probabilistic systems

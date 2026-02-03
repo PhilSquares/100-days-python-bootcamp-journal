@@ -96,7 +96,8 @@ git push
 |------|------------|------------------------|-------------------------|
 | 1    | 2026-01-19 | 🎸 Band Name Generator | [Code](projects/day-001/main.py) |
 | 2    | 2026-01-26 | 📊 Tip Calculator      | [Code](projects/day-002/main.py) | 
-| 3.   | 2026-01-28 | 🏝️ Treasure Island     | [Code](projects/day-003/main.py) |
+| 3    | 2026-01-28 | 🏝️ Treasure Island     | [Code](projects/day-003/main.py) |
+| 4    | 2026-02-02 | ✂️ Rock Paper Scissors | [Code](projects/day-004/main.py) |
 
 ---
 
