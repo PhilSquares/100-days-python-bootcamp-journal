@@ -275,3 +275,58 @@ Randomness + lists are foundational for:
   - Sampling data
   - AI behavior
   - Probabilistic systems
+
+
+## Day 5 - Beginner - Python Loops
+
+### 🔁 For Loops
+
+Used to repeat an action a specific number of times.
+
+```python
+for i in range(0, 5):
+    print(i)
+```
+
+### 📋 Lists
+Lists store multiple values in a single variable.
+
+```python
+fruits = ["apple", "banana", "cherry"]
+```
+
+Add items to a list using:
+```python
+fruits.append("orange")
+```
+
+### 🎲 Random Module
+Import the random module to generate random values:
+
+```python
+import random
+```
+
+Pick a random item from a list:
+```python
+random.choice(my_list)
+```
+
+Shuffle a list in-place:
+```python
+random.shuffle(my_list)
+```
+
+### 🔗 Building Strings from Lists
+Convert a list into a string by looping through it:
+```python
+password = ""
+for char in password_list:
+    password += char
+```
+
+### 💡 Key Takeaways
+- Loops are ideal for repetitive tasks.
+- Lists allow dynamic data storage and manipulation.
+- Randomization is essential for generating secure outputs.
+- Shuffling ensures unpredictability in generated results.
