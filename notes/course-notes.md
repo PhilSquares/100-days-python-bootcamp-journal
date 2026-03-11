@@ -330,3 +330,74 @@ for char in password_list:
 - Lists allow dynamic data storage and manipulation.
 - Randomization is essential for generating secure outputs.
 - Shuffling ensures unpredictability in generated results.
+
+## Day 6 - Beginner - Python Functions & Karel
+
+### 🧩 Python Functions
+
+Functions allow you to group reusable code into a single block that can be called multiple times.
+
+Define a function using the `def` keyword:
+
+```python
+def greet():
+    print("Hello!")
+```
+
+Call the function:
+  ```python
+  greet()
+  ```
+
+Benefits of functions:
+ - Improves code readability
+ - Reduces repetition
+ - Makes programs easier to maintain
+ - Allows logical separation of tasks
+
+ 🔁 Creating Helper Functions
+   - Sometimes we build new behavior using existing functions.
+
+```python
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+```
+This creates a reusable function for turning right even if the environment only provides `turn_left()`.
+
+  🔄 While Loops
+  - A while loop repeats code as long as a condition remains true.
+
+```python
+while not at_goal():
+    move()
+```
+This loop continues executing until the goal condition becomes true.
+
+🧠 Conditional Logic for Decision Making
+  - Programs often need to make decisions based on environment conditions.
+
+```python
+if right_is_clear():
+    turn_right()
+elif front_is_clear():
+    move()
+else:
+    turn_left()
+```
+This logic checks conditions in order and executes the first valid action.
+
+🧭 Maze Solving Strategy (Right-Hand Rule)
+The maze challenge uses a common navigation algorithm:
+1. If you can turn right, turn right and move.
+2. Else if you can go forward, move forward.
+3. Otherwise turn left.
+
+This strategy ensures that a robot following a wall will eventually reach the exit in many maze structures.
+
+💡 Key Takeaways
+  - Functions help organize complex logic into reusable components.
+  - Helper functions simplify repetitive tasks.
+  - while loops allow programs to react dynamically to changing conditions.
+  - Combining loops with conditional logic enables algorithmic problem solving.

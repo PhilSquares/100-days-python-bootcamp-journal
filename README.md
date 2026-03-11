@@ -99,6 +99,7 @@ git push
 | 3    | 2026-01-28 | 🏝️ Treasure Island     | [Code](projects/day-003/main.py) |
 | 4    | 2026-02-02 | ✂️ Rock Paper Scissors | [Code](projects/day-004/main.py) |
 | 5    | 2026-02-11 | 👨🏻‍💻 Password Generator  | [Code](projects/day-005/main.py) | 
+| 6    | 2026-03-11 | 🤖 Reeborg Maze Solver | [Code](projects/day-006/main.py) |
 
 ---
 
