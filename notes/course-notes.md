@@ -26,7 +26,7 @@
 - String concatenation allows combining variables and strings with the + operator.
 - Comments **(# This is a comment)** are useful for explaining code.
 - Debugging tip: print intermediate values to ensure your program is working as expected.
-
+---
 
 ## Day 2 — Understanding Data Types & String Manipulation
 
@@ -102,7 +102,7 @@ print(f"Your score is {score}, your height is {height}, winning: {is_winning}")
 ```
 
 They are faster, cleaner, and more readable than string concatenation.
-
+---
 
 ## Day 3 — Beginner - Control Flow and Logical Operators
 
@@ -275,6 +275,7 @@ Randomness + lists are foundational for:
   - Sampling data
   - AI behavior
   - Probabilistic systems
+---
 
 
 ## Day 5 - Beginner - Python Loops
@@ -330,6 +331,7 @@ for char in password_list:
 - Lists allow dynamic data storage and manipulation.
 - Randomization is essential for generating secure outputs.
 - Shuffling ensures unpredictability in generated results.
+---
 
 ## Day 6 - Beginner - Python Functions & Karel
 
@@ -401,3 +403,82 @@ This strategy ensures that a robot following a wall will eventually reach the ex
   - Helper functions simplify repetitive tasks.
   - while loops allow programs to react dynamically to changing conditions.
   - Combining loops with conditional logic enables algorithmic problem solving.
+---
+
+## Day 7 - Beginner - Hangman
+### 🎯 Game State Management
+
+Games require tracking multiple pieces of state:
+
+- `lives` → remaining attempts
+- `game_over` → controls loop termination
+- `correct_letters` → stores correct guesses
+
+Example:
+
+```python
+lives = 6
+game_over = False
+correct_letters = []
+```
+### 🔁 While Loop for Game Execution
+The game runs continuously until a win or loss condition is met:
+
+```python
+while not game_over:
+    # game logic here
+```
+
+### 📋 Tracking User Input
+Store correct guesses to preserve progress:
+
+```python
+correct_letters.append(guess)
+```
+
+Prevent duplicate guesses:
+```python
+if guess in correct_letters:
+    print("Already guessed")
+```
+
+### 🧱 Building Dynamic Output
+Rebuild the displayed word on every loop iteration:
+```python
+display = ""
+
+for letter in chosen_word:
+    if letter in correct_letters:
+        display += letter
+    else:
+        display += "_"
+```
+
+### ❤️ Lives System
+Track incorrect guesses:
+
+```python
+if guess not in chosen_word:
+    lives -= 1
+```
+End the game when lives reach zero:
+
+```python
+if lives == 0:
+    game_over = True
+```
+
+### 🏁 Win Condition
+Check if the user has guessed all letters:
+
+```python
+if "_" not in display:
+    game_over = True
+```
+
+### 💡 Key Takeaways
+- Managing state is critical in interactive applications.
+- Lists are useful for tracking progress over time.
+- Loops + conditionals form the backbone of game logic.
+- Clear separation of responsibilities improves readability (to be improved with functions later).
+---
