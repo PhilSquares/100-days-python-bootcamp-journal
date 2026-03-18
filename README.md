@@ -101,6 +101,7 @@ git push
 | 5    | 2026-02-11 | 👨🏻‍💻 Password Generator  | [Code](projects/day-005/main.py) | 
 | 6    | 2026-03-11 | 🤖 Reeborg Maze Solver | [Code](projects/day-006/main.py) |
 | 7    | 2026-03-17 | 🧍‍♂️ Hangman Game        | [Code](projects/day-007/main.py) |
+| 8    | 2026-03-18 | 🔐 Caesar Cipher Tool  | [Code](projects/day-008/main.py) |
 
 ---
 

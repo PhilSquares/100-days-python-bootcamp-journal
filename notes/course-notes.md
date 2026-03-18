@@ -482,3 +482,84 @@ if "_" not in display:
 - Loops + conditionals form the backbone of game logic.
 - Clear separation of responsibilities improves readability (to be improved with functions later).
 ---
+
+## Day 8 - Beginner - Function Parameters & Caesar Cipher
+### 🧩 Function Parameters
+
+Functions can accept inputs (parameters) to make them reusable and dynamic.
+
+Example:
+
+```python
+def greet(name):
+    print(f"Hello, {name}")
+```
+
+Call the function:
+```python 
+greet("Phil")
+```
+
+### 🔄 Functions with Multiple Parameters
+You can pass multiple values into a function:
+
+```python
+def calculate_total(price, tax):
+    return price + tax
+```
+
+### 🔁 Reusable Logic Design
+Instead of writing separate functions for encoding and decoding, you can use one function with conditional logic:
+
+```python 
+if direction == "decode":
+    shift *= -1
+```
+
+### 🔤 Working with Index Positions
+You can find the position of a letter in a list:
+
+```python 
+position = alphabet.index(letter)
+```
+
+Then shift it:
+```python 
+new_position = position + shift
+```
+
+### 🔁 Modulo Operator (%)
+The modulo operator ensures values wrap around within a fixed range.
+
+```python
+shifted_position %= len(alphabet)
+```
+This prevents index errors and keeps values within bounds.
+
+### 🧠 Handling Edge Cases
+Not all characters should be transformed.
+
+```python
+if letter not in alphabet:
+    output_text += letter
+```
+This preserves:
+ - Spaces
+ - Numbers
+ - Symbols
+
+### 🔁 Continuous Program Execution
+Use a loop to allow repeated user interaction:
+
+```python
+while should_continue:
+    # run program
+```
+
+### 💡 Key Takeaways
+ - Parameters make functions flexible and reusable.
+ - Modulo arithmetic is essential for circular data structures.
+ - A single function can handle multiple behaviors with conditional logic.
+ - Handling edge cases improves program robustness.
+ - This pattern mirrors real-world data transformation in backend systems.
+---
