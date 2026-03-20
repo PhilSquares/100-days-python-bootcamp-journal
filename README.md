@@ -102,6 +102,7 @@ git push
 | 6    | 2026-03-11 | 🤖 Reeborg Maze Solver | [Code](projects/day-006/main.py) |
 | 7    | 2026-03-17 | 🧍‍♂️ Hangman Game        | [Code](projects/day-007/main.py) |
 | 8    | 2026-03-18 | 🔐 Caesar Cipher Tool  | [Code](projects/day-008/main.py) |
+| 9    | 2026-03-20 | 🧑🏻‍⚖️ Secret Auction      | [Code](projects/day-009/main.py) |
 
 ---
 

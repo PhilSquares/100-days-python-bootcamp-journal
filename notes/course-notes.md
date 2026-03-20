@@ -563,3 +563,99 @@ while should_continue:
  - Handling edge cases improves program robustness.
  - This pattern mirrors real-world data transformation in backend systems.
 ---
+
+## Day 9 - Beginner - Dictionaries, Nesting, and the Secret Auction
+### 📦 Dictionaries (Key-Value Pairs)
+
+Dictionaries store data as key-value pairs.
+
+Example:
+
+```python
+bids = {
+    "Alice": 100,
+    "Bob": 150
+}
+```
+
+- Keys must be unique.
+- Values can be any data type.
+
+### ➕ Adding Data to a Dictionary
+ - Add new entries dynamically:
+
+```python
+bids["Charlie"] = 200
+```
+
+### 🔁 Iterating Through a Dictionary
+ - Loop through keys:
+
+```python
+for bidder in bids:
+    print(bidder)
+```
+
+ - Access values:
+
+```python
+for bidder in bids:
+    print(bids[bidder])
+```
+
+### 🧠 Finding the Maximum Value
+ - Track the highest value while iterating:
+
+```python
+highest_bid = 0
+winner = ""
+
+for bidder in bids:
+    bid_amount = bids[bidder]
+    if bid_amount > highest_bid:
+        highest_bid = bid_amount
+        winner = bidder
+```
+
+### 🧩 Functions for Separation of Concerns
+ - Encapsulate logic into functions:
+
+```python
+def find_highest_bidder(bidding_record):
+    # logic here
+```
+
+ - Benefits:
+   - Cleaner code
+   - Easier debugging
+   - Reusability
+
+### 🔁 Looping for Continuous Input
+ - Use a loop to collect multiple inputs:
+
+```python 
+while continue_bidding:
+    # collect input
+```
+
+### 🧱 Nesting (Preview Concept)
+ - Dictionaries can store more complex structures:
+
+```python
+users = {
+    "Alice": {"bid": 100, "location": "NY"},
+    "Bob": {"bid": 150, "location": "CA"}
+}
+```
+
+This is useful for:
+  - APIs
+  - Database records
+  - JSON data structures
+
+### 💡 Key Takeaways
+- Dictionaries are ideal for structured data storage.
+- Iterating through dictionaries enables data processing.
+- Separating logic into functions improves code quality.
+- This pattern mirrors real-world backend systems (e.g., request payloads, database queries).
+---
