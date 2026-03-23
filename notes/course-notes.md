@@ -659,3 +659,71 @@ This is useful for:
 - Separating logic into functions improves code quality.
 - This pattern mirrors real-world backend systems (e.g., request payloads, database queries).
 ---
+
+## Day 10 - Beginner - Functions with Outputs
+### 🔁 Functions with Return Values
+
+Functions can return data using the `return` keyword:
+
+```python
+def add(n1, n2):
+    return n1 + n2
+```
+- `return` sends the result back to where the function was called.
+- Unlike `print()`, returned values can be stored and reused.
+
+### 🧠 Print vs Return
+```python
+def example():
+    print("Hello")   # Outputs to console
+    return "Hello"   # Sends value back
+```
+- `print()` → displays output.
+- `return` → passes value for further use.
+
+### 🗂 Storing Functions in Data Structures
+Functions can be stored in dictionaries and called dynamically:
+
+```python
+operations = {
+    "+": add,
+    "-": subtract
+}
+
+result = operations["+"](2, 3)  # Calls add(2, 3)
+```
+
+This pattern enables clean and scalable logic handling.
+
+### 🔁 While Loops for Continuous Execution
+```python
+while should_continue:
+    # perform operation
+```
+
+Used to:
+  - Keep programs running.
+  - Allow repeated user interaction.
+
+### 🔄 Recursion
+Recursion occurs when a function calls itself:
+
+```python 
+def calculator():
+    ...
+    calculator()
+```
+
+Used here to:
+  - Restart the calculator program.
+
+### ⚠️ Note:
+- Recursion must have a stopping condition.
+- Excessive recursion can lead to stack overflow.
+
+### 💡 Key Takeaways
+- Functions with `return` enable reusable and flexible code.
+- Dictionaries can map user input to functionality.
+- Loops allow continuous interaction.
+- Recursion is powerful but should be used carefully.
+---
