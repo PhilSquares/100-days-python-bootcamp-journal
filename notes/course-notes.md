@@ -727,3 +727,74 @@ Used here to:
 - Loops allow continuous interaction.
 - Recursion is powerful but should be used carefully.
 ---
+
+## Day 11 - Beginner - The Blackjack Capstone Project
+### 🧩 Breaking Down Complex Problems
+
+Large programs should be divided into smaller functions:
+
+```python
+def deal_card():
+def calculate_score(cards):
+def compare(u_score, c_score):
+```
+
+Each function has a single responsibility, making the code easier to read and maintain.
+
+### ♠️ Game Logic Design
+Key components of the Blackjack game:
+  - Initial card dealing
+  - Player decision loop (hit or stand)
+  - Dealer logic (draw until >= 17)
+  - Final score comparison
+
+### 🃏 Handling Special Cases
+Blackjack (Natural 21)
+```python
+if sum(cards) == 21 and len(cards) == 2:
+    return 0
+```
+
+- Returning 0 acts as a special flag value for Blackjack.
+
+### Ace Adjustment
+```python
+if 11 in cards and sum(cards) > 21:
+    cards.remove(11)
+    cards.append(1)
+```
+
+- Prevents the player from busting unnecessarily. 
+
+### 🔁 Game Flow Control
+Player Turn
+ - Continue drawing cards until:
+     - Player chooses to stop
+     - Player busts
+     - Player hits Blackjack
+
+### Dealer Turn
+```python
+while computer_score < 17:
+    computer_cards.append(deal_card())
+```
+
+- Dealer follows fixed rules
+
+### ⚖️ Comparing Scores
+Encapsulate logic in a dedicated function:
+```python
+def compare(u_score, c_score):
+```
+
+Benefits:
+  - Cleaner main logic
+  - Easier debugging
+  - Reusable logic
+
+### 💡 Key Takeaways
+- Break complex systems into small, focused functions.
+- Use helper functions to improve readability.
+- Handle edge cases explicitly.
+- Separate game logic from user interaction when possible.
+- This is your first end-to-end application-style project.
