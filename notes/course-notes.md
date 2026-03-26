@@ -798,3 +798,78 @@ Benefits:
 - Handle edge cases explicitly.
 - Separate game logic from user interaction when possible.
 - This is your first end-to-end application-style project.
+---
+
+## Day 12 - Beginner - Scope & Number Guessing Game
+### 🌍 Variable Scope
+
+Scope determines where a variable is accessible in your code.
+
+#### Local Scope
+Variables defined inside a function are only accessible within that function:
+
+```python
+def my_function():
+    x = 10  # Local variable
+```
+
+### Global Scope
+- Variables defined outside functions can be accessed anywhere:
+
+```python
+x = 10  # Global variable
+```
+
+### ⚠️ Modifying Global Variables
+- Avoid modifying global variables directly inside functions.
+     - Instead: 
+       - Pass values as parameters.
+       - Return updated values.
+
+```python
+def update_turns(turns):
+    return turns - 1
+```
+
+### 🔢 Constants
+- Constants are variables that should not change.
+
+```python
+EASY_LEVEL_TURNS = 10
+HARD_LEVEL_TURNS = 5
+```
+
+- Use uppercase naming convention.
+- Improves readability and maintainability.
+
+### 🎯 Game Flow Structure
+1. Generate a random number.
+2. Set difficulty (number of attempts).
+3. Loop until:
+  - User guesses correctly.
+  - User runs out of attempts. 
+
+### 🔁 While Loop for Game Logic
+```python
+while guess != answer:
+```
+
+Used to:
+  - Continuously prompt user input.
+  - Evaluate guesses dynamically.
+
+### 🔄 Returning Updated State
+```python
+turns = check_answer(guess, answer, turns)
+```
+
+- Functions can return updated values.
+- Helps maintain clean and predictable state.
+
+### 💡 Key Takeaways
+- Scope controls where variables can be accessed.
+- Avoid unnecessary global variables.
+- Use functions to manage and update state.
+- Constants improve code clarity.
+- This pattern is foundational for larger applications.
+---

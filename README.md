@@ -105,6 +105,7 @@ git push
 | 9    | 2026-03-20 | 🧑🏻‍⚖️ Secret Auction      | [Code](projects/day-009/main.py) |
 | 10   | 2026-03-23 | 🧮 Calculator Project  | [Code](projects/day-010/main.py) |
 | 11   | 2026-03-25 | 🃏 Blackjack Project   | [Code](projects/day-011/main.py) | 
+| 12   | 2026-03-26 | 💯 Number Guessing Game| [Code](projects/day-012/main.py) |
 
 ---
 
