@@ -873,3 +873,80 @@ turns = check_answer(guess, answer, turns)
 - Constants improve code clarity.
 - This pattern is foundational for larger applications.
 ---
+
+## Day 13 - Beginner - Debugging: How to Find and Fix Errors in your Code
+
+### 🐞 Types of Errors
+
+#### 1. Syntax Errors
+- Occur when code violates Python syntax rules.
+- Example: missing colon, incorrect indentation.
+
+#### 2. Runtime Errors
+- Occur during execution.
+- Example: index out of range.
+
+#### 3. Logic Errors
+- Code runs but produces incorrect results.
+- Hardest to detect.
+
+---
+
+### 🔍 Debugging Techniques
+
+#### 1. Describe the Problem
+- Understand what the code is supposed to do.
+- Identify where expectations differ from reality.
+
+---
+
+#### 2. Reproduce the Bug
+- Ensure the issue can be consistently triggered.
+- Helps isolate the root cause.
+
+---
+
+#### 3. Play Computer
+- Step through code manually.
+- Track variable values at each step.
+
+---
+
+#### 4. Use Print Statements
+```python
+print(variable)
+```
+
+- Helps trace execution flow.
+- Quick and effective debugging method.
+
+#### 5. Use a Debugger
+- Set breakpoints.
+- Step through code line by line.
+- Inspect variable state in real time.
+
+### ⚠️ Common Mistakes
+- Off-by-one errors in loops: 
+
+```python
+range(1, 20)  # Does NOT include 20
+```
+
+- Assignment vs comparison:
+
+```python
+x = 5   # assignment
+x == 5  # comparison
+```
+
+- Indexing errors:
+
+```python
+list[6]  # Out of range if list has 6 items (0-5)
+```
+
+### 💡 Key Takeaways
+- Debugging is a structured process, not guesswork.
+- Always verify assumptions about your code.
+- Use tools (print, debugger) to inspect behavior.
+- Strong debugging skills = strong engineering skills.

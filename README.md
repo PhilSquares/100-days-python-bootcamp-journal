@@ -106,6 +106,7 @@ git push
 | 10   | 2026-03-23 | 🧮 Calculator Project  | [Code](projects/day-010/main.py) |
 | 11   | 2026-03-25 | 🃏 Blackjack Project   | [Code](projects/day-011/main.py) | 
 | 12   | 2026-03-26 | 💯 Number Guessing Game| [Code](projects/day-012/main.py) |
+| 13   | 2026-03-27 | 🐞 Debugging Exercises | [Code](projects/day-013/main.py) |
 
 ---
 
