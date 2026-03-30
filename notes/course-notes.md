@@ -950,3 +950,70 @@ list[6]  # Out of range if list has 6 items (0-5)
 - Always verify assumptions about your code.
 - Use tools (print, debugger) to inspect behavior.
 - Strong debugging skills = strong engineering skills.
+---
+
+## Day 14 - Beginner - Higher/Lower Game Project
+### 🧱 Modular Code Structure
+Breaking code into multiple files improves readability and maintainability:
+
+- `main.py` → Core game logic
+- `art.py` → UI elements (ASCII art)
+- `game_data.py` → Dataset used in the game
+
+---
+
+### 🔁 Game Loop Pattern
+A `while` loop is used to keep the game running:
+
+```python
+while game_should_continue:
+    # game logic here
+```
+
+Key concept:
+- Maintain a game state variable (e.g., game_should_continue).
+- Update it based on user success/failure.
+
+### 🎲 Random Data Selection
+- Use the random module to select items dynamically:
+
+```python
+import random
+account = random.choice(data)
+```
+- Ensures variability in gameplay.
+
+### 🧠 Function Design
+- Functions help isolate logic:
+
+```python
+def format_data(account):
+    return f"{account['name']}, a {account['description']}, from {account['country']}"
+```
+
+Benefits:
+- Improves readability.
+- Encourages reuse.
+- Simplifies debugging.
+
+### ⚖️ Comparison Logic
+- Compare two values and return a boolean result:
+
+```python
+def check_answer(user_guess, a_followers, b_followers):
+    if a_followers > b_followers:
+        return user_guess == "a"
+    else:
+        return user_guess == "b"
+```
+
+### 📊 State Management
+Track values across iterations:
+- score → increments on correct answers
+- game_should_continue → controls loop execution
+
+### 💡 Key Takeaways
+- Modularization is essential for scalable applications.
+- Game loops are a common real-world programming pattern.
+- Clean function design leads to more maintainable code.
+- Separating data from logic improves flexibility and reusability.
