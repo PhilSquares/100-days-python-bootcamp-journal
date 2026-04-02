@@ -1017,3 +1017,81 @@ Track values across iterations:
 - Game loops are a common real-world programming pattern.
 - Clean function design leads to more maintainable code.
 - Separating data from logic improves flexibility and reusability.
+---
+
+## Day 15 - Intermediate - Local Development Environment Setup & Coffee Machine Project
+
+### 🧱 Structured Program Design
+Large programs should be broken into smaller, focused functions:
+
+- `is_resource_sufficient()` → validation
+- `process_coins()` → input handling
+- `is_transaction_successful()` → payment logic
+- `make_coffee()` → state mutation
+
+---
+
+### 📦 Nested Dictionaries
+Used to represent structured data like menus:
+
+```python
+MENU = {
+    "latte": {
+        "ingredients": {
+            "water": 200,
+            "milk": 150,
+            "coffee": 24,
+        },
+        "cost": 2.5,
+    }
+}
+```
+
+- Allows easy access:
+```python
+MENU["latte"]["ingredients"]["water"]
+```
+
+## 🔁 Application Loop
+- Main program runs continuously until turned off:
+
+```python
+while is_on:
+    choice = input("What would you like?: ")
+```
+
+## ⚙️ State Management
+- Track application state using variables:
+  - resources → available ingredients
+  - profit → total money earned
+
+```python
+resources["water"] -= 50
+profit += drink_cost
+```
+
+## 💰 Handling Transactions
+Break payment logic into steps:
+
+1. Accept input (coins).
+2. Calculate total.
+3. Compare with cost.
+4. Return change if necessary.
+
+```python
+if money_received >= drink_cost:
+    change = round(money_received - drink_cost, 2)
+```
+
+## 🧪 Validation Before Execution
+- Always validate before performing an action:
+
+```python
+if is_resource_sufficient(drink["ingredients"]):
+```
+
+## 💡 Key Takeaways
+- Real-world programs require structured logic and state management.
+- Separating concerns improves scalability and readability.
+- Validation and error handling are critical in production systems.
+- This project mirrors backend service flows (request → validation → processing → response).

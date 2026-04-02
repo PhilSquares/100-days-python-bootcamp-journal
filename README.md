@@ -108,6 +108,7 @@ git push
 | 12   | 2026-03-26 | 💯 Number Guessing Game| [Code](projects/day-012/main.py) |
 | 13   | 2026-03-27 | 🐞 Debugging Exercises | [Code](projects/day-013/exercises/) |
 | 14   | 2026-03-30 | 🎲 Higher/Lower Game   | [Code](projects/day-014/main.py) |
+| 15   | 2026-04-02  | ☕️ Coffee Machine Simulation | [Code](projects/day-015/main.py) |
 
 ---
 
