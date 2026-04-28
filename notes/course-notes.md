@@ -1095,3 +1095,59 @@ if is_resource_sufficient(drink["ingredients"]):
 - Separating concerns improves scalability and readability.
 - Validation and error handling are critical in production systems.
 - This project mirrors backend service flows (request → validation → processing → response).
+---
+
+## Day 16 - Intermediate - Object Oriented Programming (OOP)
+### 🧠 What is OOP?
+Object-Oriented Programming is a programming paradigm that organizes code into objects, which combine data and behavior.
+
+---
+
+### 🧱 Classes vs Objects
+- **Class** → Blueprint for creating objects  
+- **Object** → Instance of a class
+
+```python
+class Dog:
+    def bark(self):
+        print("Woof")
+
+my_dog = Dog()
+my_dog.bark()
+```
+
+### ⚙️ Attributes vs Methods
+- Attributes → Variables attached to an object (data)
+- Methods → Functions that belong to an object (behavior)
+
+💡 A method is called a method instead of a function because it belongs to a class and defines what an object can do.
+
+### 🧩 Example from Project
+```python
+coffee_maker = CoffeeMaker()
+coffee_maker.report()
+```
+
+- coffee_maker → object
+- report() → method
+
+### 🧱 Encapsulation
+- Combining data and behavior into a single unit (class):
+
+```python
+class CoffeeMaker:
+    def __init__(self):
+        self.resources = {"water": 300}
+```
+
+### 🧠 Key Benefits of OOP
+- Better organization
+- Improved scalability
+- Easier maintenance
+- Reusable components
+
+### 💡 Key Takeaways
+- Objects have attributes (data) and methods (behavior).
+- Multiple objects can be created from the same class.
+- OOP is widely used in backend systems and large applications.
+---
