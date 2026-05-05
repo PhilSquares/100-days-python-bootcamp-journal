@@ -110,6 +110,7 @@ git push
 | 14   | 2026-03-30 | 🎲 Higher/Lower Game   | [Code](projects/day-014/main.py) |
 | 15   | 2026-04-02  | ☕️ Coffee Machine Simulation | [Code](projects/day-015/main.py) |
 | 16   | 2026-04-27 |  🔨 Coffee Machine (OOP Refactor) | [Code](projects/day-016/main.py)|
+| 17   | 2026-05-05 | 🧩 Quiz Game (OOP Edition) | [Code](projects/day-017/main.py) |
 
 ---
 

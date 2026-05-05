@@ -1151,3 +1151,76 @@ class CoffeeMaker:
 - Multiple objects can be created from the same class.
 - OOP is widely used in backend systems and large applications.
 ---
+
+## Day 17 - Intermediate - The Quiz Project & the Benefits of Object-Oriented Programming (OOP)
+
+### 🧱 What is Object-Oriented Programming?
+Object-Oriented Programming (OOP) is a programming paradigm that organizes code into **objects**, which are instances of **classes**.
+
+- **Attributes** → Data the object holds  
+- **Methods** → Functions the object can perform  
+
+Example:
+```python
+class Dog:
+    def __init__(self, name):
+        self.name = name  # Attribute
+
+    def bark(self):
+        print("Woof!")  # Method
+```
+
+### 🧩 Key Concepts Practiced
+1. Classes & Objects
+  - A class is a blueprint.
+  - An object is an instance of that class.
+
+```python
+question = Question("Text", "True")
+```
+
+2. Constructors (__init__)
+  - Automatically runs when a new object is created.
+  - Used to initialize object attributes.
+
+```python
+def __init__(self, q_text, q_answer):
+    self.text = q_text
+    self.answer = q_answer
+```
+
+3. Encapsulation
+  - Bundling data and behavior within a class.
+  - Example: QuizBrain handles both quiz logic and score tracking.
+
+4. Managing State
+  - State is maintained using class attributes.
+
+```python
+self.score = 0
+self.question_number = 0
+```
+
+5. Separation of Concerns
+- Breaking code into logical components:
+  - Question → data model
+  - QuizBrain → logic/controller
+  - data.py → data source
+
+This improves:
+- Readability
+- Maintainability
+- Scalability
+
+### 💡 Why OOP Matters
+- Makes code more modular and reusable.
+- Easier to debug and extend
+- Mirrors real-world systems more naturally
+- Essential for large-scale applications
+
+### 🔑 Key Takeaways
+- Classes define structure; objects bring them to life.
+- Methods define behavior tied to objects.
+- OOP enables clean separation between data and logic.
+- Designing with OOP improves long-term scalability.
+---
